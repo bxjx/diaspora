@@ -137,11 +137,12 @@ group :test do
   gem 'mock_redis'
 end
 
+gem 'capistrano', '~> 2.9.0', :require => false
+gem 'capistrano_colors', :require => false
+gem 'capistrano-ext', '1.2.1', :require => false
+
 group :development do
   gem 'heroku'
-  gem 'capistrano', '~> 2.9.0', :require => false
-  gem 'capistrano_colors', :require => false
-  gem 'capistrano-ext', '1.2.1', :require => false
   gem 'linecache', '0.46', :platforms => :mri_18
   gem 'parallel_tests', :require => false
   gem 'ruby-debug-base19', '0.11.23' if RUBY_VERSION.include? '1.9.1'
